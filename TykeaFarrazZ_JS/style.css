@@ -1,0 +1,51 @@
+body {
+    font-family: Candara;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1922;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.ribbon {
+    background-color: #674188;
+    color: #f7efe5;
+    text-align: left;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.laman {
+    max-width: 100%;
+    margin: auto;
+    height: 100vh;
+    background-image: url(https://i.postimg.cc/zXDZzrz3/BG.png);
+}
+
+.row {
+    color: #1d1922;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+}
+
+.col {
+    color: #1d1922;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #674188;
+    color: #f7efe5;
+    text-align: center;
+    padding: 10px;
+}
