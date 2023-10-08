@@ -39,22 +39,25 @@ document.getElementById("tombolMisteri").onclick = function(){
             tampilkanMisteri.textContent = "Gaada, gaada bang. Pilih yang di atas aja.";
             break
     }
-
-    // for
-    var inputDibagi = parseInt(document.getElementById("inputAngka"));
-    var inputAngka = parseInt(document.getElementById("inputDibagi"));
-
-    
-    
-    
-
-if (!isNaN(inputAngka)) {
-    for (let i = 5; i >= 1; i--) {
-        if (i % inputDibagi != 0) {
-            inputDibagi.textContent = i;
-        }
-    }
-} else {
-    inputAngka.textContent = "Masukkan angka saja."
 }
+
+// for
+document.getElementById("tombolAngka").onclick = function() {
+    var inputAngka = parseInt(document.getElementById("inputAngka").value);
+    var inputDibagi = parseInt(document.getElementById("inputDibagi").value);
+    
+    if (!isNaN(inputAngka) && !isNaN(inputDibagi)) {
+
+        var hasilFor = "";
+    
+        for (let i = inputAngka; i >= 1; i--) {
+            if (i % inputDibagi === 0) {
+                hasilFor += i + " ";
+            }
+        }
+    
+        document.getElementById("tampilkanAngka").textContent = hasilFor;
+    } else {
+        document.getElementById("tampilkanAngka").textContent = "Hanya input angka.";
+    }
 }
