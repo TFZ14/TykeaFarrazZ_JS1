@@ -61,3 +61,36 @@ document.getElementById("tombolAngka").onclick = function() {
         document.getElementById("tampilkanAngka").textContent = "Hanya input angka.";
     }
 }
+
+// while
+document.getElementById("tombolWhile").onclick = function() {
+    var inputWhile = parseInt(document.getElementById("inputWhile").value);
+    var inputBatasan = parseInt(document.getElementById("inputBatasan").value);
+
+    let hasilWhile = "";
+    let i = inputWhile;
+
+    while (i <= inputBatasan) {
+        hasilWhile += i + ", ";
+        i++;
+    }
+
+    document.getElementById("tampilkanWhile").textContent = hasilWhile;
+}
+
+// do while
+document.getElementById("tombolDowhile").onclick = function() {
+    var inputDowhile = parseInt(document.getElementById("inputDowhile").value);
+    var inputDobatas = parseInt(document.getElementById("inputDobatasan").value);
+
+    let hasilDowhile = "";
+    let i = inputDowhile;
+
+    do {
+        hasilDowhile += i + ". ";
+        i++;
+    } while (i <= inputDobatas);
+
+    document.getElementById("tampilkanDowhile").innerHTML = hasilDowhile;
+}
+
